@@ -2,6 +2,7 @@ import { prisma } from "@/utils/prisma";
 import Todo from "@/components/shared/Todo";
 import SideBar from "@/components/shared/SideBar";
 import NavBar from "@/components/shared/NavBar";
+import Footer from "@/components/shared/Footer";
 
 async function getData() {
   const data = await prisma.todo.findMany({
@@ -42,6 +43,7 @@ const Home = async () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

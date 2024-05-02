@@ -3,21 +3,13 @@ import { TodoType } from "@/types/todoType";
 import EditTodo from "./EditTodo";
 import { useState } from "react";
 const Todo = ({ todo }: { todo: TodoType }) => {
-  const todoStyle = {
-    backgroundColor: "background",
-  };
-
   return (
     <div className="flex flex-col items-center">
-      <div
-        className="p-6 flex flex-col justify-around shadow-2xl shadow-amber-950 min-w-80 w-80 h-80 "
-        style={todoStyle}
-      >
+      <div className="p-6 flex flex-col justify-around shadow-2xl shadow-amber-950 min-w-80 w-80 h-80 bg-background ">
         <div
-          className="m-auto h-8 w-8 rounded-full shadow-2xl shadow-amber-950"
+          className="m-auto h-8 w-8 rounded-full shadow-2xl shadow-amber-950 inline-block"
           style={{
             backgroundColor: todo.backgroundColor || "red",
-            display: "inline-block",
           }}
         ></div>
         <span className="text-center">

@@ -41,36 +41,18 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
   };
 
   const handleSave = () => {
-    // Aquí podrías procesar o guardar el texto del modal.
-    // console.log("Texto guardado:", modalText);
-    closeModal(); // Cerrar el modal después de guardar.
+    closeModal();
   };
 
   return (
     <Modal
-      style={{
-        content: {
-          backgroundColor: "#fefefe",
-          top                   : '50%',
-          left                  : '50%',
-          right                 : 'auto',
-          bottom                : 'auto',
-          marginRight           : '-50%',
-          transform             : 'translate(-50%, -50%)',
-          // display: "flex",
-          // flexDirection: "column",
-          // justifyContent: "space-evenly",
-        },
-      }}
+      className="bg-[#fefefe] absolute top-1/2 left-1/2 right-auto bottom-auto mr-[-50%] rounded-lg shadow-lg transform -translate-x-1/2 -translate-y-1/2"
       isOpen={isOpen}
       onRequestClose={closeModal}
       contentLabel="Ejemplo de Modal"
     >
-      <div className="m-10 ">
-        <div className="flex flex-row-reverse">
-          <DeleteTodo todo={todo} onDelete={closeModal} />{" "}
-          {/* Este botón antes estaba más arriba */}
-        </div>
+      <div className="p-10">
+        <DeleteTodo className="" todo={todo} onDelete={closeModal} />
         <h1 className="text-3xl text-neutral-800  my-10 font-bold">
           Note Editor
         </h1>

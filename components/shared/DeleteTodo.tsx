@@ -7,7 +7,15 @@ import Input from "../ui/Input";
 import { TodoType } from "@/types/todoType";
 import { BsFillTrashFill } from "react-icons/bs";
 
-const DeleteTodo = ({ todo, onDelete }: { todo: TodoType; onDelete: () => void }) => {
+const DeleteTodo = ({
+  todo,
+  onDelete,
+  className,
+}: {
+  todo: TodoType;
+  className?: string | undefined;
+  onDelete: () => void;
+}) => {
   return (
     <Form
       action={deleteTodo}
@@ -16,7 +24,7 @@ const DeleteTodo = ({ todo, onDelete }: { todo: TodoType; onDelete: () => void }
     >
       <Input type="hidden" name="inputId" value={todo.id} />
 
-      <Button variant="delete" text={"Delete"} type="submit" />
+      <Button className="" variant="delete" text={"Delete"} type="submit" />
     </Form>
   );
 };

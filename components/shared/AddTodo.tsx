@@ -26,12 +26,10 @@ const AddTodo = ({ changeOpen }: { changeOpen: ChangeOpenFunction }) => {
             placeholder="Add Message..."
           />
         </div>
-        {/*  Input para agregar un mensaje, anda pero sale subrayado en rojo en page.tsx y en todoActions.tsx */}
         <div className="flex justify-center text-white text-xl">
           <div className="label w-full text-xl text-neutral-800">
             Your color pin:
             <ColorSelector initialColor="red" />
-            {/*  PUSE ESTE INITIALCOLOR */}
           </div>
         </div>
         <Button type="submit" text="Add" variant="save" />

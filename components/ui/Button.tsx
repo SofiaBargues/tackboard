@@ -7,6 +7,7 @@ interface buttonProps {
   type?: "button" | "submit" | "reset";
   text: string | ReactNode;
   onClick?: () => void;
+  className: "";
   variant: "action" | "save" | "default" | "delete" | ""; //Agregue la variante ""
 }
 
@@ -22,7 +23,7 @@ const Button = ({ type, text, onClick, variant = "default" }: buttonProps) => {
           variant === "save" &&
             " bg-secondary p-3 text-center rounded-3xl hover:text-background shadow-md  hover:bg-secondary/80  text-md text-white ",
           variant === "delete" &&
-            "hover:bg-red-600 border border-red-600 text-md text-red-600 bg-background p-3 flex  rounded-3xl hover:text-background"
+            "hover:bg-red-600 border border-red-600 text-md text-red-600 bg-background p-3 flex  rounded-3xl hover:text-background "
         )}
       >
         {text}

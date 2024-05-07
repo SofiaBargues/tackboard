@@ -8,6 +8,7 @@ interface inputProps {
   value?: string;
   onChange?: ChangeEventHandler<HTMLInputElement> | undefined;
   className?: string;
+  maxLength: number;
 }
 const Input = ({
   name,
@@ -16,6 +17,7 @@ const Input = ({
   value,
   onChange,
   className = "",
+  maxLength,
 }: inputProps) => {
   return (
     <>
@@ -29,6 +31,7 @@ const Input = ({
         type={type}
         value={value}
         placeholder={placeholder}
+        maxLength={maxLength}
       />
     </>
   );

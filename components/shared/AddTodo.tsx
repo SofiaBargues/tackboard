@@ -16,7 +16,12 @@ const AddTodo = ({ changeOpen }: { changeOpen: ChangeOpenFunction }) => {
         <h1 className="text-3xl text-neutral-800 font-bold">Write your note</h1>
         <div className="label text-xl text-neutral-800">
           Your title:
-          <Input name="input" type="text" placeholder="Add Todo..." />
+          <Input
+            name="input"
+            type="text"
+            placeholder="Add Todo..."
+            maxLength={15}
+          />
         </div>
         <div className="label text-xl text-neutral-800">
           Your text:
@@ -24,6 +29,8 @@ const AddTodo = ({ changeOpen }: { changeOpen: ChangeOpenFunction }) => {
             className="h-32 w-full p-2 rounded-2xl border-2 border-gray-300"
             name="message"
             placeholder="Add Message..."
+            maxLength={100}
+            style={{ resize: "none", width: "100%", boxSizing: "border-box" }}
           />
         </div>
         <div className="flex justify-center text-white text-xl">

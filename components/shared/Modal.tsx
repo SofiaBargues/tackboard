@@ -68,6 +68,7 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
                 type="text"
                 name="newTitle"
                 placeholder="EditTodo..."
+                maxLength={15}
               />
             </div>
             <div className="label text-xl text-neutral-800">
@@ -77,6 +78,12 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
                 className="h-32 w-full p-2 rounded-2xl border-2 border-gray-300"
                 value={modalMessage}
                 name="messageEdit"
+                maxLength={100}
+                style={{
+                  resize: "none",
+                  width: "100%",
+                  boxSizing: "border-box",
+                }}
                 placeholder="Edit Message..."
               />
             </div>

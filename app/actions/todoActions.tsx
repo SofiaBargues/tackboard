@@ -9,9 +9,9 @@ export async function create(formData: FormData) {
   const input = formData.get("input") as string;
 
   const message = formData.get("message") as string; //Acá llega el message, pero no lo puedo poner en el prisma porque me sale error
-  
-  const backgroundColor = formData.get("backgroundColor") as string;
-  
+
+  const pinColor = formData.get("backgroundColor") as string;
+
   if (!input.trim()) {
     return;
   }
@@ -19,8 +19,8 @@ export async function create(formData: FormData) {
   await prisma.todo.create({
     data: {
       title: input,
-      mensaje : message,
-      backgroundColor : backgroundColor
+      mensaje: message,
+      pinColor: pinColor,
     },
   });
 
@@ -53,7 +53,7 @@ export async function edit(formData: FormData) {
   const input = formData.get("newTitle") as string;
   const inputId = formData.get("inputId") as string;
   const messageEdit = formData.get("messageEdit") as string;
-  const backgroundColor = formData.get("backgroundColor") as string;
+  const pinColor = formData.get("backgroundColor") as string;
 
   await prisma.todo.update({
     where: {
@@ -61,22 +61,21 @@ export async function edit(formData: FormData) {
     },
     data: {
       title: input,
-      mensaje : messageEdit,
-      backgroundColor : backgroundColor
+      mensaje: messageEdit,
+      pinColor: pinColor,
     },
   });
   revalidatePath("/");
 }
 
-
 export async function deleteTodo(formData: FormData) {
-  const inputId = formData.get("inputId") as string
+  const inputId = formData.get("inputId") as string;
 
   await prisma.todo.delete({
-    where : {
-      id : inputId,
+    where: {
+      id: inputId,
     },
-  })
+  });
 
-  revalidatePath("/")
+  revalidatePath("/");
 }

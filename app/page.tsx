@@ -11,7 +11,7 @@ async function getData() {
       id: true,
       mensaje: true,
       isCompleted: true,
-      backgroundColor: true,
+      pinColor: true,
     },
     orderBy: {
       createdAt: "desc",

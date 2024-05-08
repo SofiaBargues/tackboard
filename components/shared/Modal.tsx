@@ -90,7 +90,7 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
 
             <div className="label w-full text-xl text-neutral-800">
               Your color pin:
-              <ColorSelector initialColor={todo.backgroundColor ?? "#FFFFFF"} />
+              <ColorSelector initialColor={todo.pinColor ?? "#FFFFFF"} />
             </div>
             <Button type="submit" text="Save" variant="save" />
           </div>

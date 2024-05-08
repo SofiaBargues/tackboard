@@ -9,7 +9,7 @@ const Todo = ({ todo }: { todo: TodoType }) => {
         <div
           className="h-8 w-8 rounded-full"
           style={{
-            backgroundColor: todo.backgroundColor || "red",
+            backgroundColor: todo.pinColor || "red",
           }}
         ></div>
       </div>

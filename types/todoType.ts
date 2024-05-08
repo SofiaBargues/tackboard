@@ -1,11 +1,10 @@
 export type TodoType = {
   id: string;
   title?: string | null;
-  color?: string | null;
+  color?: string | null; // borrar color
   isCompleted: boolean;
   createdAt?: Date;
   mensaje?: string | null;
-  backgroundColor?: string | null;
-  onDelete?: () => void; 
-
+  pinColor?: string | null;
+  onDelete?: () => void;
 };

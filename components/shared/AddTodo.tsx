@@ -39,7 +39,7 @@ const AddTodo = ({ changeOpen }: { changeOpen: ChangeOpenFunction }) => {
             <ColorSelector initialColor="red" />
           </div>
         </div>
-        <Button type="submit" text="Add" variant="save" />
+        <Button className="" type="submit" text="Add" variant="save" />
       </div>
     </Form>
   );

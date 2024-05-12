@@ -57,7 +57,7 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
           Note Editor
         </h1>
         <Form action={edit} onSubmit={handleSubmit}>
-          <Input name="inputId" value={todo.id} type="hidden" />
+          <Input maxLength={1} name="inputId" value={todo.id} type="hidden" />
 
           <div className="flex flex-col justify-center gap-6 ">
             <div className="label text-xl text-neutral-800">
@@ -92,7 +92,7 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
               Your color pin:
               <ColorSelector initialColor={todo.pinColor ?? "#FFFFFF"} />
             </div>
-            <Button type="submit" text="Save" variant="save" />
+            <Button className="" type="submit" text="Save" variant="save" />
           </div>
         </Form>
       </div>{" "}

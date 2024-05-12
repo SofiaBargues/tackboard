@@ -22,7 +22,7 @@ const DeleteTodo = ({
       className="w-full m-auto"
       onSubmit={() => onDelete()}
     >
-      <Input type="hidden" name="inputId" value={todo.id} />
+      <Input maxLength={1} type="hidden" name="inputId" value={todo.id} />
 
       <Button className="" variant="delete" text={"Delete"} type="submit" />
     </Form>

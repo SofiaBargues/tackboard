@@ -57,7 +57,7 @@ const CustomModal: React.FC<ModalProps> = ({ isOpen, closeModal, todo }) => {
           Note Editor
         </h1>
         <Form action={edit} onSubmit={handleSubmit}>
-          <Input maxLength={1} name="inputId" value={todo.id} type="hidden" />
+          <Input maxLength={14} name="inputId" value={todo.id} type="hidden" />
 
           <div className="flex flex-col justify-center gap-6 ">
             <div className="label text-xl text-neutral-800">

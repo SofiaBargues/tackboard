@@ -29,8 +29,8 @@ const Home = async () => {
   return (
     <div>
       <NavBar />
-      <div className="py-32 flex justify-center flex-col bg-background gap-12 items-center">
-        <div className="bg-opacity-60 border-[16px] border-accent/90 bg-[url(https://img.freepik.com/free-photo/wood-board-background_1339-5418.jpg?t=st=1714152936~exp=1714156536~hmac=09b0e4513c9138adec1d738f0d8cd3a2aa2fdae9986b382e3a62648772f21918&w=1380)] ">
+      <div className=" flex justify-center flex-col bg-background items-center p-10">
+        <div className="bg-opacity-60 w-full border-[16px] border-accent/90 bg-[url(https://img.freepik.com/free-photo/wood-board-background_1339-5418.jpg?t=st=1714152936~exp=1714156536~hmac=09b0e4513c9138adec1d738f0d8cd3a2aa2fdae9986b382e3a62648772f21918&w=1380)] ">
           <div className="flex justify-center items-center flex-col w-full p-20">
             <div className="flex justify-end w-full items-center">
               <SideBar />

@@ -3,7 +3,7 @@ const Footer = () => {
     <div className="flex w-full justify-center align-baseline items-center  h-20 bg-black">
       <h1 className=" text-white ">Sofi 🌼 -</h1>
       <a
-        href={"https://github.com/SofiaBargues"}
+        href={"https://github.com/SofiaBargues/tackboard"}
         target="_blank"
         rel="noopener noreferrer"
       >

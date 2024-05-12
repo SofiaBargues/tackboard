@@ -19,7 +19,7 @@ function ColorSelector({ initialColor = "red" }: { initialColor: string }) {
           <input
             className="opacity-0 absolute"
             type="radio"
-            name="backgroundColor"
+            name="pinColor"
             value="red"
             onChange={handleColorChange}
           />
@@ -34,7 +34,7 @@ function ColorSelector({ initialColor = "red" }: { initialColor: string }) {
           <input
             className="opacity-0 absolute"
             type="radio"
-            name="backgroundColor"
+            name="pinColor"
             value="blue"
             onChange={handleColorChange}
           />
@@ -49,7 +49,7 @@ function ColorSelector({ initialColor = "red" }: { initialColor: string }) {
           <input
             className="opacity-0 absolute"
             type="radio"
-            name="backgroundColor"
+            name="pinColor"
             value="yellow"
             onChange={handleColorChange}
           />
@@ -64,7 +64,7 @@ function ColorSelector({ initialColor = "red" }: { initialColor: string }) {
           <input
             className="opacity-0 absolute"
             type="radio"
-            name="backgroundColor"
+            name="pinColor"
             value="green"
             onChange={handleColorChange}
           />

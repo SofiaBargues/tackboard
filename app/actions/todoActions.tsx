@@ -10,7 +10,7 @@ export async function create(formData: FormData) {
 
   const message = formData.get("message") as string; //Acá llega el message, pero no lo puedo poner en el prisma porque me sale error
 
-  const pinColor = formData.get("backgroundColor") as string;
+  const pinColor = formData.get("pinColor") as string;
 
   if (!input.trim()) {
     return;
@@ -53,7 +53,7 @@ export async function edit(formData: FormData) {
   const input = formData.get("newTitle") as string;
   const inputId = formData.get("inputId") as string;
   const messageEdit = formData.get("messageEdit") as string;
-  const pinColor = formData.get("backgroundColor") as string;
+  const pinColor = formData.get("pinColor") as string;
 
   await prisma.todo.update({
     where: {

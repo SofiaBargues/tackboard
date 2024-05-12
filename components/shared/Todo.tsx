@@ -16,10 +16,10 @@ const Todo = ({ todo }: { todo: TodoType }) => {
       <div className="flex flex-col justify-evenly items-center">
         <span className="text-center">
           <h1 className="font-bold uppercase text-2xl">{todo.title}</h1>
-          <p>{todo.mensaje}</p>
+          <p className="break-all">{todo.mensaje}</p>
         </span>
       </div>
-      <div className="flex justify-end gap-5 text-xl mt-10">
+      <div className="flex justify-end gap-5 text-xl mt-10 ">
         <EditTodo todo={todo} />
       </div>
     </div>

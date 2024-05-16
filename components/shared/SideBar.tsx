@@ -7,7 +7,7 @@ const SideBar = () => {
 
   const changeOpen = () => setOpen(false);
   return (
-    <div className="bg-primary/70 hover:bg-primary text-white rounded-3xl  p-5 top-0 left-0 right-0 shadow-md">
+    <div className="bg-primary/100 hover:bg-pink-600 text-white rounded-3xl  p-5 shadow-md">
       <button
         className="m-2 text-center text-2xl"
         onClick={() => setOpen(true)}

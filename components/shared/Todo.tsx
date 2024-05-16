@@ -4,7 +4,7 @@ import EditTodo from "./EditTodo";
 import { useState } from "react";
 const Todo = ({ todo }: { todo: TodoType }) => {
   return (
-    <div className="p-6 flex flex-col justify-between shadow-2xl shadow-amber-950 min-w-80 w-80 h-80 bg-background ">
+    <div className="p-6 flex m-auto flex-col justify-between shadow-2xl shadow-amber-950 min-w-80 w-80 h-80 bg-background ">
       <div className=" w-full h-16 flex justify-center items-start ">
         <div
           className="h-8 w-8 rounded-full"

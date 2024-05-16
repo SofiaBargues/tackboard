@@ -32,8 +32,8 @@ const Home = async () => {
       <div className=" flex justify-center flex-col bg-background items-center md:p-10">
         <div className="bg-opacity-60 w-full border-[16px]  border-accent/90 bg-[url(https://img.freepik.com/free-photo/wood-board-background_1339-5418.jpg?t=st=1714152936~exp=1714156536~hmac=09b0e4513c9138adec1d738f0d8cd3a2aa2fdae9986b382e3a62648772f21918&w=1380)] ">
           <div className="flex justify-center items-center  flex-col w-full py-10 md:p-20">
-            <div className="flex justify-center w-full items-center">
-              <SideBar />
+            <div className="flex justify-center  w-full items-center">
+              <SideBar disabled={data.length >= 12} />
             </div>
             <div className="grid  grid-cols-[repeat(auto-fill,_minmax(330px,_1fr))] gap-10 m-auto   mt-10 w-full">
               {data.map((todo) => (

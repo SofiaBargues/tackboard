@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import AddTodo from "./AddTodo";
 
-const SideBar = () => {
+const SideBar = ({ disabled }) => {
   const [open, setOpen] = useState(false);
 
   const changeOpen = () => setOpen(false);
@@ -11,6 +11,7 @@ const SideBar = () => {
       <button
         className="m-2 text-center text-2xl"
         onClick={() => setOpen(true)}
+        disabled={disabled}
       >
         New note
       </button>

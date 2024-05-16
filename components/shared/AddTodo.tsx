@@ -12,7 +12,7 @@ const AddTodo = ({ changeOpen }: { changeOpen: ChangeOpenFunction }) => {
 
   return (
     <Form action={create} className=" m-auto" onSubmit={handleSubmit}>
-      <div className="flex flex-col gap-10 w-[500px] items-stretch px-10">
+      <div className="flex flex-col gap-10 md:w-[500px] items-stretch px-3 md:px-10">
         <h1 className="text-3xl text-neutral-800 font-bold">Write your note</h1>
         <div className="label text-xl text-neutral-800">
           Your title:

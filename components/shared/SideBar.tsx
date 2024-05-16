@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import AddTodo from "./AddTodo";
 
-const SideBar = ({ disabled }) => {
+const SideBar = ({ disabled }: { disabled: boolean }) => {
   const [open, setOpen] = useState(false);
 
   const changeOpen = () => setOpen(false);

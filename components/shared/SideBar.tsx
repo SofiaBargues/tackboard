@@ -7,9 +7,9 @@ const SideBar = ({ disabled }: { disabled: boolean }) => {
 
   const changeOpen = () => setOpen(false);
   return (
-    <div className="bg-primary/100 hover:bg-pink-600 text-white rounded-3xl  p-5 shadow-md">
+    <div className=" ">
       <button
-        className="m-2 text-center text-2xl"
+        className="bg-primary/100 hover:bg-pink-600 text-white rounded-3xl shadow-md p-5 m-2 text-center text-2xl disabled:bg-gray-400 disabled: disabled:cursor-not-allowed"
         onClick={() => setOpen(true)}
         disabled={disabled}
       >

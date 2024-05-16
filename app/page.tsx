@@ -27,7 +27,7 @@ const Home = async () => {
   const data = await getData();
 
   return (
-    <div>
+    <div className="grid grid-rows-[80px_1fr_80px] min-h-screen">
       <NavBar />
       <div className=" flex justify-center flex-col bg-background items-center md:p-10">
         <div className="bg-opacity-60 w-full border-[16px]  border-accent/90 bg-[url(https://img.freepik.com/free-photo/wood-board-background_1339-5418.jpg?t=st=1714152936~exp=1714156536~hmac=09b0e4513c9138adec1d738f0d8cd3a2aa2fdae9986b382e3a62648772f21918&w=1380)] ">
